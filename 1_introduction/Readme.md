@@ -51,3 +51,9 @@ Kamera Türleri:
 Perspective Camera: Gerçek hayattaki kameralar gibi
 
 ![image](https://github.com/user-attachments/assets/49fea823-deb2-4d7a-b574-d43ba11688b5)
+
+Ortographic Camera: 6 bileşeni var (sağ, sol, yukarı, aşağı, yakın, uzak)
+![alt text](image.png)
+
+perspective kamera da bir cisim uzaktan yakına geldiğinde büyür ama ortographic camera da boyut değişimi olmaz. 
+![alt text](image-1.png)
