@@ -1,0 +1,14 @@
+{
+  "name": "1_introduction",
+  "version": "1.0.0",
+  "description": "*1*\r package.json dosyasının eklenmesi için\r npm init -y",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.177.0"
+  }
+}
