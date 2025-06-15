@@ -57,3 +57,49 @@ Ortographic Camera: 6 bileşeni var (sağ, sol, yukarı, aşağı, yakın, uzak)
 
 perspective kamera da bir cisim uzaktan yakına geldiğinde büyür ama ortographic camera da boyut değişimi olmaz. 
 ![alt text](image-1.png)
+
+# 9
+
+Materyal Türleri: 
+
+MeshBasicMaterial:
+
+* Işıktan etkilenmez. Nesne, sahnede ışık olsa da olmasa da hep aynı görünür.
+
+* Çok hafif ve hızlıdır, debug sahneler, veya flat stil için idealdir.
+
+* Opaklık, renk, alfa (transparent) gibi basit özellkleri vardır.
+
+MeshStandardMaterial:
+
+* Fizik tabanlı render (PBR) materyalidir: Gerçekçi yansımalar, yüzey pürüzlüğü ve metalik özellikleri hesaplar.
+
+* roughness ve metalness gibi parametrelerle ince ayar yapılabilir.
+
+* Güncel projelerde en çok tercih edilen materyaldir.
+
+MeshLambertMaterial:
+
+* Işıktan etkilenir, ancak yumuşak ve basit gölgeleme (Lambertian shading) kullanır.
+
+* Performans açısından daha hızlıdır, fakat daha az gerçekçidir.
+
+* Yaygın olarak “düşük poligon” stiller ya da mobil performans isteyen sahnelerde kullanılır.
+
+# 10
+
+Anlık olarak parametreleri değiştirebilmek için dat.gui kullanılır. Hafif ve etkileşimli bir arayüz aracıdır. Arayüzde bir kontrol paneli oluşturur.
+
+npm install dat.gui
+
+# 11
+
+directional light ile gölgelendirme eklediğimizde, gölge ortographic kameraya göre oluşur. Bu yüzden gölgede cisim yakına yada uzağa gittiğinde boyutu değişmez.
+
+gölgenin yarım çıkmasını şu şekilde engelleriz: 
+
+# 12
+
+html canvas'ında normalde kırmızı çizgi şeklindedir (1920, 0). Bunu normalize ederek (1,1) yaparız. Bunu yapmamızın nedeni ise mause ile harekette daha rahat edebilmektir.
+
+![alt text](image-2.png)
