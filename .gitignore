@@ -5,3 +5,5 @@
 1_introduction/.parcel-cache/data.mdb
 1_introduction/.parcel-cache/data.mdb
 *.mdb
+/3_3d_animation/.parcel-cache
+/3_3d_animation/node_modules
